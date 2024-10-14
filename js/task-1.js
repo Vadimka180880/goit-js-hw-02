@@ -1,9 +1,8 @@
-function calculateTotalPrice (orderedQuantity, pricePerItem) {
-return  orderedQuantity * pricePerItem;
+function makeTransaction(quantity, pricePerDroid) {
+    const totalPrice = quantity * pricePerDroid;
+    return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 }
 
-console.log(calculateTotalPrice(5, 100)); 
-console.log(calculateTotalPrice(8, 60));    
-console.log(calculateTotalPrice(3, 400));  
-console.log(calculateTotalPrice(1, 3500)); 
-console.log(calculateTotalPrice(12, 70));
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));    
+console.log(makeTransaction(10, 500));
